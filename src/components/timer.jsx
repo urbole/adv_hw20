@@ -23,10 +23,10 @@ export const Timer = (props) => {
         setTime(props.time);
       }
 
-    }, step)
+    }, step);
 
     return () => {
-      clearInterval(ticker)
+      clearInterval(ticker);
     }
   }, [time, isAutoStart, step, props]);
 
